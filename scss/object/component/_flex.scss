@@ -1,0 +1,9 @@
+.c-flex{
+    &--nav{
+        display: flex;
+        justify-content: right;
+        &__lists{
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.c-nav{
+    // &__lists{
+        
+    // }
+    &__list{
+        color: $header-nav-color;
+        font-size: $header-nav-fontsize;
+        margin-left: 30px;
+        &>a{
+            font-weight: bold;
+            filter: drop-shadow($drop-shadow);
+        }
+    }
+}
