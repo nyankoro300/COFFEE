@@ -1,0 +1,47 @@
+.c-item{
+    &__title{
+        font-size: 2.5rem;
+        border-bottom: solid 6px #E03131;
+        // text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        @include sp{
+            font-size: 1.25rem;
+            margin-bottom:20px ;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 45px;
+        @include sp{
+            padding: 0;
+        }
+        &__name{
+            width: 87%;
+            border-bottom: dotted 1px #000000;
+            padding-right: 18px;
+            margin-bottom: 25px;
+        }
+        &__price{
+            width: 13%;
+            @include sp{
+                text-align: right;
+            }
+        }
+        &--food{
+            margin-bottom: 55px;
+        }
+        &__text{
+            width: 50%;
+            padding: 2%;
+            @include sp{
+                width: 100%;
+            }
+        }
+        &--padding{
+            padding: 0;
+        }
+    }
+}

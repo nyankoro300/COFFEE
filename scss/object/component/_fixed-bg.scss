@@ -1,0 +1,25 @@
+.c-fixed-bg{
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    @include sp{
+        height: 94px;
+        font-size: 2rem;
+        background-attachment:scroll;
+    }
+    &--menu{
+        background-image: url(../../../img/menu.jpg);
+    }
+    &--about{
+        background-image: url(../../../img/about.jpg);
+    }
+    &--location{
+        background-image: url(../../../img/location.jpg);
+    }
+    // &__space{
+    //     height: 300px;
+    //     z-index: -10;
+    // }
+}

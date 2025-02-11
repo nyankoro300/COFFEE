@@ -1,0 +1,75 @@
+@mixin btn-virtical{
+    content: "";
+        width: 20%;
+        height: 2px;
+        background: red;
+        position: absolute;
+        transition: all 0.3s ease;
+}
+@mixin btn-lateral{
+    content: "";
+        width: 2px;
+        height: 50%;
+        background: red;
+        position: absolute;
+        transition: all 0.3s ease;
+}
+
+.btn{
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    width: 160px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+    & span{
+        position: relative;
+        display: block;
+        // &:hover{
+        //     color: red;
+        // }
+    }
+    &--lateral{
+        &::before{
+            @include btn-lateral;
+            left: 0;
+        }
+        
+        &::after{
+            @include btn-lateral;
+            right: 0;
+            bottom: 0;
+        }
+        &:hover{
+            &::before{
+                height: 100%;
+            }
+            &::after{
+                height: 100%;
+            }
+        }
+    }
+    &--virtical{
+        &::before{
+            @include btn-virtical;
+            left: 0;
+        }
+        &::after{
+            @include btn-virtical;
+                right: 0;
+                bottom: 0;
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+            }
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    
+}

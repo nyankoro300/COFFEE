@@ -5,7 +5,20 @@
 @import "./foundation/variables";
 // layout======================
 @import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
 // component===================
 @import "./object/component/flex";
 @import "./object/component/nav";
-@import "./object/component/header-title";
+@import "./object/component/title";
+@import "./object/component/fixed-bg";
+@import "./object/component/menu";
+@import "./object/component/item";
+@import "./object/component/wrapper";
+@import "./object/component/about";
+@import "./object/component/btn";
+@import "./object/component/map";
+@import "./object/component/info";
+
+@import "./object/project/menu";
+@import "./object/project/section";

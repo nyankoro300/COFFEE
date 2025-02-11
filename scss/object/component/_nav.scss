@@ -9,6 +9,8 @@
         &>a{
             font-weight: bold;
             filter: drop-shadow($drop-shadow);
+            text-decoration: none;
+            color: white;
         }
     }
 }

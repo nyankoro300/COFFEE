@@ -1,0 +1,29 @@
+.c-title{
+    // position: absolute;
+    // inset: 0;
+    // margin: auto;
+
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    color: $section-title-color;
+    font-size: 4.5rem;
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
+    @include sp{
+        top: 42%;
+    }
+    &--min{
+        @extend .c-title;
+        @include sp{
+            font-size: 2rem;
+            top: 26%;
+        }
+    }
+    & img{
+        max-width: 100%;
+    }
+    
+}
